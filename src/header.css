@@ -147,7 +147,34 @@ h2 {
   padding-block: 40px;
 }
 
+h3 {
+  font-weight: bold;
+  font-size: larger;
+  font-family: "Palanquin", sans-serif;
+  color: #241c19;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: large;
+  font-family: "Palanquin", sans-serif;
+  color: #241c19;
+}
+
 p {
   font-family: "Roboto", sans-serif;
   color: #241c19;
+}
+
+/*FOOTER*/
+footer {
+  background-color: #584239;
+}
+
+footer h4 {
+  color: #f2e291;
+}
+
+footer p {
+  color: #fbf5ec;
 }
