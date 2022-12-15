@@ -31,7 +31,7 @@
   --analog-card-height: auto;
   --analog-card-width: auto;
   --analog-card-background: var(--color-white-dark) ;
-  --analog-card-padding:4em;
+  --analog-card-padding:1.5em;
 
 
   /*Hvadbetyder*/
@@ -311,7 +311,16 @@ form{
   text-align: center;
 }
 
-.smalfilm_og_kvalitet {
-  background-color: var(--color-brown-light);
+.smalfilm_og_kvalitet  {
   color: var(--color-white-clean);
+}
+
+#priser {
+  background: var(--color-white-dark);
+margin-top: -20px;
+padding-top: 20px;
+  width: 180px;
+  border: 2px solid var(--color-green-dark);
+  border-radius: 20px;
+
 }

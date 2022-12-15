@@ -29,29 +29,20 @@
     
 
 
-    <section>
-        <h3></h3>
-        <h4></h4>
-        <div class="grid grid-cols-3">
-        <button class="col-span-3">Smalfilm og kvalitet</button>
-        </div>
-        <table></table>
-
-        <table></table>
-    </section>
+    
 
     <section>
         <h2>Prisliste på smalfilms-overspilninger</h2>
 <p>Vælg smalfilm og kvalitet</p>
 </section>
 
-<section class=" smalfilmbutton grid grid-cols-2 gap-5">
-<div x-data="{ open: false }" x-cloak>
+<section class=" smalfilmbutton   ">
+<div class="" x-data="{ open: false }" x-cloak>
 
 
   <button @click="open = ! open" :aria-expanded="open" aria-controls="smalfilm og kvalitet prislise">8mm SD</button>
-  <ol x-show="open" id="tracklist">
-   <div>
+  <ol class="" x-show="open" id="priser">
+   <div class="">
     <h3>Opstart</h3>
     <p>250 Kr.</p>
    </div>
@@ -71,10 +62,11 @@
    </div>
   </ol>
 </div>
+<br>
 
 <div class="smalfilm_og_kvalitet" x-data="{ open: false }" x-cloak>
     <button @click="open = ! open" :aria-expanded="open" aria-controls="tracklist">8mm HD 720p</button>
-    <ol class="" x-show="open" id="tracklist">
+    <ol class="" x-show="open" id="priser">
      <div>
       <h3>Opstart</h3>
       <p>250 Kr.</p>
@@ -95,10 +87,11 @@
      </div>
     </ol>
   </div>
+  <br>
 
   <div x-data="{ open: false }" x-cloak>
     <button @click="open = ! open" :aria-expanded="open" aria-controls="tracklist">8mm HD 1080P</button>
-    <ol x-show="open" id="tracklist">
+    <ol x-show="open" id="priser">
      <div>
       <h3>Opstart</h3>
       <p>250 Kr.</p>
@@ -119,10 +112,10 @@
      </div>
     </ol>
   </div>
-  
+   <br>
   <div x-data="{ open: false }" x-cloak>
     <button @click="open = ! open" :aria-expanded="open" aria-controls="tracklist">9,5mm SD</button>
-    <ol x-show="open" id="tracklist">
+    <ol x-show="open" id="priser">
      <div>
       <h3>Opstart</h3>
       <p>350 Kr.</p>
@@ -143,10 +136,12 @@
      </div>
     </ol>
   </div>
+
+  <br>
   
   <div x-data="{ open: false }" x-cloak>
     <button @click="open = ! open" :aria-expanded="open" aria-controls="tracklist">9,5mm HD 720P</button>
-    <ol x-show="open" id="tracklist">
+    <ol x-show="open" id="priser">
      <div>
       <h3>Opstart</h3>
       <p>350 Kr.</p>
@@ -167,10 +162,12 @@
      </div>
     </ol>
   </div>
+
+  <br>
   
   <div x-data="{ open: false }" x-cloak>
     <button @click="open = ! open" :aria-expanded="open" aria-controls="tracklist">9,4mm HD 1080p</button>
-    <ol x-show="open" id="tracklist">
+    <ol x-show="open" id="priser">
      <div>
       <h3>Opstart</h3>
       <p>350 Kr.</p>
@@ -191,10 +188,12 @@
      </div>
     </ol>
   </div>
+
+  <br>
   
   <div x-data="{ open: false }" x-cloak>
     <button @click="open = ! open" :aria-expanded="open" aria-controls="tracklist">16mm HD 720p</button>
-    <ol x-show="open" id="tracklist">
+    <ol x-show="open" id="priser">
      <div>
       <h3>Opstart</h3>
       <p>450 Kr.</p>
@@ -215,10 +214,12 @@
      </div>
     </ol>
   </div>
+
+  <br>
   
   <div x-data="{ open: false }" x-cloak>
     <button @click="open = ! open" :aria-expanded="open" aria-controls="tracklist">16mm HD 1080p</button>
-    <ol x-show="open" id="tracklist">
+    <ol x-show="open" id="priser">
      <div>
       <h3>Opstart</h3>
       <p>450 Kr.</p>
@@ -239,11 +240,13 @@
      </div>
     </ol>
   </div>
+  
+  <br>
 
   
   <div x-data="{ open: false }" x-cloak>
     <button @click="open = ! open" :aria-expanded="open" aria-controls="tracklist">16mm 2K</button>
-    <ol x-show="open" id="tracklist">
+    <ol x-show="open" id="priser">
      <div>
       <h3>Opstart</h3>
       <p>450 Kr.</p>
@@ -264,10 +267,12 @@
      </div>
     </ol>
   </div>
+
+  <br>
   
   <div x-data="{ open: false }" x-cloak>
     <button @click="open = ! open" :aria-expanded="open" aria-controls="tracklist">16mm 4K</button>
-    <ol x-show="open" id="tracklist">
+    <ol x-show="open" id="priser">
      <div>
       <h3>Opstart</h3>
       <p>450 Kr.</p>
@@ -288,6 +293,8 @@
      </div>
     </ol>
   </div>
+  
+  <br>
 
     </section>
 
