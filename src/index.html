@@ -115,37 +115,50 @@
         </p>
       </section>
     </main>
-    <footer class="mt-10 p-10">
-      <section class="flex justify-evenly">
+    <footer class="mt-10 p-10 px-12 md:flex md:justify-between">
+      <section class="flex justify-between md:block">
         <a href="index.html"
           ><img class="w-32" src="/img/logo.svg" alt="logo"
         /></a>
-        <a href="https://www.facebook.com/CPHLABDK"
-          ><img src="/img/facebook.svg" alt="Facebook ikon"
-        /></a>
-        <a href="https://www.instagram.com/cph.lab/"
-          ><img src="/img/instagram.svg" alt="Instagram ikon"
-        /></a>
+        <div class="flex justify-between gap-8 md:justify-evenly">
+          <a href="https://www.facebook.com/CPHLABDK"
+            ><img src="/img/facebook.svg" alt="Facebook ikon"
+          /></a>
+          <a href="https://www.instagram.com/cph.lab/"
+            ><img src="/img/instagram.svg" alt="Instagram ikon"
+          /></a>
+        </div>
       </section>
-      <section class="mt-4">
+      <section class="mt-8">
         <h4>KONTAKT</h4>
-        <p>info@cph-lab.dk</p>
-        <p>
+        <p class="mt-4">info@cph-lab.dk</p>
+        <p class="mt-4">
           CPH-LAB/ Hørsholm foto <br />
           Hovedgaden 12, 2970, Hørsholm
         </p>
       </section>
-      <section class="mt-4">
+      <section class="info mt-8">
         <h4>INFO</h4>
-        <p>Forsendelse og returnering</p>
-        <p>Persondatapolitik</p>
-        <p>Handelsbetingelser</p>
+        <p class="mt-4 underline underline-offset-4">
+          Forsendelse og returnering
+        </p>
+        <p class="mt-4 underline underline-offset-4">Persondatapolitik</p>
+        <p class="mt-4 underline underline-offset-4">Handelsbetingelser</p>
       </section>
-      <section class="mt-4">
+      <section class="mt-8">
         <h4>
           Kan du ikke få nok af os? <br />
           Tilmeld dig vores nyhedsbrev!
         </h4>
+        <form class="mt-4 flex rounded-sm p-0">
+          <input
+            type="text"
+            id="fname"
+            value="jenshansen@email.dk"
+            class="rounded-sm border-none text-gray-500"
+          />
+          <button class="rounded-sm md:w-32">TILMELD</button>
+        </form>
       </section>
     </footer>
     <script type="module" src="./main.js"></script>

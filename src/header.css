@@ -178,3 +178,15 @@ footer h4 {
 footer p {
   color: #fbf5ec;
 }
+
+footer button {
+  box-shadow: none;
+  height: 41px;
+  align-items: stretch;
+  font-family: "Palanquin", sans-serif;
+  color: #241c19;
+}
+
+footer button:active {
+  box-shadow: none;
+}
