@@ -133,7 +133,7 @@ h1 {
   font-family: "Exo 2", sans-serif;
   color: #6f8a85;
   font-weight: bold;
-  font-size: 2.5rem;
+  font-size: 220%;
   line-height: 130%;
   padding-block: 4%;
 }
@@ -166,6 +166,10 @@ p {
   color: #241c19;
 }
 
+li {
+  list-style-type: square;
+}
+
 /*FOOTER*/
 footer {
   background-color: #584239;
@@ -189,4 +193,21 @@ footer button {
 
 footer button:active {
   box-shadow: none;
+}
+
+/*FORSIDE KNAP*/
+@media (min-width: 700px) {
+  #forside_hero {
+    position: relative;
+  }
+
+  #forside_hero button {
+    position: absolute;
+    top: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
 }
