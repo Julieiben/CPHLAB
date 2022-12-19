@@ -55,6 +55,11 @@ header a {
   color: #fbf5ec; /*SKAL LAVES TIL VARIABEL*/
 }
 
+header li {
+  list-style: none;
+  text-decoration: none;
+}
+
 /*BURGERMENU */
 @media (max-width: 700px) {
   .toggle-btn {
@@ -210,4 +215,27 @@ footer button:active {
     right: 0;
     text-align: center;
   }
+}
+
+/*SINGLEVIEW - FORM ANDERLEDES*/
+.single-form {
+  background-color: transparent;
+}
+
+[type="text"],
+[type="email"],
+[type="url"],
+[type="password"],
+[type="number"],
+[type="date"],
+[type="datetime-local"],
+[type="month"],
+[type="search"],
+[type="tel"],
+[type="time"],
+[type="week"],
+[multiple],
+textarea,
+select {
+  border-color: #584239;
 }
