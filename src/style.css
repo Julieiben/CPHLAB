@@ -259,7 +259,6 @@ body {
 }
 .fremkaldelsegrid #carousel li {
   background-color: var(--color-white-clean);
-  box-shadow: var(--button-dropshadow);
   margin: 10px;
   gap: 2em;
   display: grid;
@@ -268,6 +267,18 @@ body {
   scroll-snap-align: start;
   width: fit-content;
   place-content: start space-evenly;
+  display: flex;
+  flex-flow: column;
+}
+
+.fremkaldelsegrid #carousel li h3 {
+  float: inline-start;
+  margin: 18px;
+}
+
+.fremkaldelsegrid #carousel li h5 {
+  float: inline-end;
+  margin: 18px;
 }
 
 .fremkaldelsegrid #carousel li:hover {
@@ -857,11 +868,15 @@ header li {
   border-width: 2px;
   border-color: #f2e291; /*SKAL LAVES TIL VARIABEL*/
   border-radius: 1%;
+}
 
-  left: 51% !important;
-  right: auto !important;
-  text-align: center !important;
-  transform: translate(-51%, 0) !important;
+@media (max-width: 700px) {
+  .dropdown-content {
+    left: 51% !important;
+    right: auto !important;
+    text-align: center !important;
+    transform: translate(-51%, 0) !important;
+  }
 }
 
 .dropdown-content a {
