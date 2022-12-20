@@ -712,7 +712,7 @@ padding-block: 30px;
     font-size: var(--font-size-button-web);
     
     color: var(--color-primary-white);
-    box-shadow: var(--button-dropshadow);
+    box-shadow: var(--shadow-level-3);
     font-family: var(--font-family-h2-h4);
     }
 
