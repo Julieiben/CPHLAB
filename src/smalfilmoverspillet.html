@@ -77,7 +77,7 @@
         </div>
       </section>
 
-      <img class="w-screen" src="/img/filmrullegitter.png" alt="" />
+      <img class="w-screen" src="/img/filmrullegitter.webp" alt="" />
 
       <section class="prisliste">
         <h2>Prisliste på smalfilms-overspilninger</h2>
@@ -388,14 +388,18 @@
               </ol>
             </div>
           </section>
-          <img class="w-screen" src="/img/filmrullegitter.webp" alt="" />
         </div>
+        <img
+          class="w-screen bg-orange-50"
+          src="/img/filmrullegitter.webp"
+          alt=""
+        />
       </section>
 
-      <section class="container mx-auto px-10">
+      <section class="container mx-auto px-10 md:px-40">
         <h2 class="mx-8">UDFYLD FORMULAR & MODTAG BESTILLINGSLINK</h2>
 
-        <form action="action_page.php " class="md:grid md:grid-cols-2 md:gap-8">
+        <form action="action_page.php " class="md:flex md:gap-12">
           <div class="md:grid md:grid-cols-2 md:gap-4">
             <div class="row mt-4 md:mt-0">
               <div class="col-25">
@@ -406,7 +410,7 @@
                   type="text"
                   id="fname"
                   name="firstname"
-                  placeholder="eks. Jens"
+                  placeholder="Jens"
                 />
               </div>
             </div>
@@ -419,7 +423,7 @@
                   type="text"
                   id="lname"
                   name="lastname"
-                  placeholder="eks. Hansen"
+                  placeholder="Hansen"
                 />
               </div>
             </div>
@@ -433,7 +437,7 @@
                   type="text"
                   id="lname"
                   name="lastname"
-                  placeholder="eks. jens@hansen@mail.dk.."
+                  placeholder="jens@hansen@mail.dk.."
                 />
               </div>
             </div>
@@ -463,20 +467,20 @@
               <div class="col-25"></div>
               <div class="col-75">
                 <h4 class="text-left">SMALFILM INFO:</h4>
-                <p for="subject">
+                <p for="subject" class="pl-0">
                   Skriv her antal ruller, type af smalfilm, diameter på dem og
                   hvilken kvalitet de ønskes scannet i:
                 </p>
                 <textarea
                   id="subject"
                   name="subject"
-                  placeholder="Skriv din kommentar her"
+                  placeholder="Skriv din kommentar her..."
                   style="height: 200px"
                 ></textarea>
               </div>
             </div>
             <div class="mt-4 flex justify-center md:col-span-2">
-              <button>INDSEND</button>
+              <button class="rounded-lg">INDSEND</button>
             </div>
           </div>
           <div>
@@ -513,22 +517,23 @@
           /></a>
         </div>
       </section>
-      <section class="mt-4 md:mt-0">
-        <h4>KONTAKT</h4>
+      <section class="mt-8 md:mt-0">
+        <h4 class="ml-5 text-left">KONTAKT</h4>
         <p>info@cph-lab.dk</p>
         <p>
           CPH-LAB/ Hørsholm foto <br />
-          Hovedgaden 12, 2970, Hørsholm
+          Hovedgaden 12, <br />
+          2970, Hørsholm
         </p>
       </section>
-      <section class="info mt-8 md:mt-0">
-        <h4>INFO</h4>
+      <section class="info mt-4 md:mt-0">
+        <h4 class="ml-5 text-left">INFO</h4>
         <p class="underline underline-offset-4">Forsendelse og returnering</p>
         <p class="underline underline-offset-4">Persondatapolitik</p>
         <p class="underline underline-offset-4">Handelsbetingelser</p>
       </section>
       <section class="mt-4 md:mt-0">
-        <h4>
+        <h4 class="text-left">
           Kan du ikke få nok af os? <br />
           Tilmeld dig vores nyhedsbrev!
         </h4>
@@ -536,10 +541,10 @@
           <input
             type="text"
             id="fname"
-            placeholder="Eks. jenshansen@email.dk"
-            class="h-10 rounded-lg text-gray-500"
+            placeholder="jenshansen@email.dk"
+            class="rounded-sm border-none text-gray-500"
           />
-          <button class="h-10 rounded-sm bg-orange-200 md:w-32">TILMELD</button>
+          <button class="rounded-sm md:w-32">TILMELD</button>
         </form>
       </section>
     </footer>
