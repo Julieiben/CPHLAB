@@ -57,20 +57,21 @@
   /*KNAPPER*/
   /*almindelig knap mobil*/
   --button-width-mobil: 178px;
-  --button-height-mobil: 62px;
-  --button-radius-mobil: 15px;
+  --button-height-mobil: 45px;
+  --button-radius-mobil: 10px;
   --button-background-standard: var(--color-green);
   --button-text-color: #ffffff;
   --button-dropshadow: 0px 10px 20px black;
   --button-hover: #97bab3;
   --button-inner-shadow: inset 0 5 10px black;
 
-  --button-width-web: 295px;
-  --button-height-mobil: 62px;
+  /*almindelig knap web*/
+  --button-width-web: 220px;
+  --button-height-web: 50px;
 
   /*cta knap web*/
   --cta-button-width-web: 359px;
-  --cta-button-height-web: 59px;
+  --cta-button-height-web: 55px;
   --cta-button-radius-web: 10px;
   --cta-button-background-standard: #c6613c;
   --cta-button-text-color: #ffffff;
@@ -79,7 +80,7 @@
 
   /*cta knap mobil*/
   --cta-button-width-mobil: 203px;
-  --cta-button-height-mobil: 38px;
+  --cta-button-height-mobil: 45px;
   --cta-button-radius-mobil: 10px;
   --cta-button-background-standard: #c6613c;
   --cta-button-text-color: #ffffff;
@@ -169,7 +170,7 @@
   --font-size-h4-web: 25px;
   --font-size-h5-web: 20px;
   --font-size-p-web: 18px;
-  --font-size-button-web: 24px;
+  --font-size-button-web: 16px;
 
   /*LETTERSPACING*/
   --letter-spacing-dense: -1px;
@@ -260,25 +261,36 @@ body {
 .fremkaldelsegrid #carousel li {
   background-color: var(--color-white-clean);
   margin: 10px;
-  gap: 2em;
+  gap: 5em;
   display: grid;
   grid-template-columns: 0.5fr 0.5fr;
   flex-shrink: 0;
   scroll-snap-align: start;
   width: fit-content;
   place-content: start space-evenly;
-  display: flex;
-  flex-flow: column;
-}
-
-.fremkaldelsegrid #carousel li h3 {
-  float: inline-start;
-  margin: 18px;
+  display: block;
+  padding: 5px;
+  max-width: 240px;
+  margin-top: 20px;
 }
 
 .fremkaldelsegrid #carousel li h5 {
   float: inline-end;
-  margin: 18px;
+  margin: 10px;
+}
+
+.fremkaldelsegrid .left h2,
+.fremkaldelsegrid .left h3,
+.left {
+  text-align: left;
+}
+
+.fremkaldelsegrid .left h2 {
+  padding-bottom: 0;
+}
+
+.fremkaldelsegrid #carousel li img {
+  aspect-ratio: 1/1;
 }
 
 .fremkaldelsegrid #carousel li:hover {
@@ -676,7 +688,7 @@ footer button {
 
   .kategoriknap button {
     border-radius: var(--button-radius-mobil);
-    height: var(--cta-button-height-web);
+    height: var(--button-height-web);
     width: var(--button-width-web);
 
     font-size: var(--font-size-button-web);
