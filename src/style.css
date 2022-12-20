@@ -7,6 +7,9 @@
 
 :root {
 
+  --option-knap-background: -;
+  --option-knap-border: 2px;
+
   --input-width-mobile: 345px;
   --input-height-mobile: 55px;
 
@@ -445,6 +448,11 @@ border-color: var(--color-blue-light);
   
 }
 
+.prisliste {
+  background-color: var(--color-white-dark);
+
+}
+
 .smalfilmbutton {
   gap: 5px;
   text-align: center;
@@ -475,9 +483,8 @@ background-color: var(--button-hover);
 
 #priser {
   text-align: left;
-margin-left: 26%;
-  width: var(--button-width-mobil);
-  background: var(--color-white-dark);
+margin: auto;
+width: auto;  background: var(--color-white-dark);
   border: 2px solid var(--color-brown);
   border-radius: 5px;
 margin-top: -10px;
@@ -489,6 +496,10 @@ padding: 5px;
   text-align: left;
 
   font-size: var(--font-size-h3-mobil);
+}
+
+#priser p{
+  text-align: left;
 }
 
 
