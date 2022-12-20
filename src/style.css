@@ -85,6 +85,7 @@
 
 --button-width-web:295px;
 --button-height-mobil: 62px;
+
 /*cta knap web*/
 --cta-button-width-web: 359px;
 --cta-button-height-web: 59px;
@@ -329,6 +330,8 @@ place-content: start space-evenly;}
 
 }
 
+
+
 form button
 {
   width: var(--button-width-mobil);
@@ -403,6 +406,7 @@ padding:var(--spørgsmål-card-padding);
   background: var(--analog-card-background);
   box-shadow: var(--shadow-level-3);
   padding: var(--analog-card-padding);
+  place-content: start;
 
   
 
@@ -528,6 +532,7 @@ padding: 5px;
 
 h1 {
   text-align: center;
+  text-transform: uppercase;
 
   font-size:  var(--font-size-h1-mobil);
   font-family: var(--font-family-h1);
@@ -542,6 +547,8 @@ h1 {
 
 h2{
   text-align: center;
+  text-transform: uppercase;
+
 
   font-size: var(--font-size-h2-mobil);
   font-family: var(--font-family-h2-h4);
@@ -610,6 +617,13 @@ margin: auto;
 padding-block: 20px;
 }
 
+footer button {
+  background-color: var(--color-blue-dark);
+  width: 150px;
+padding-block: 30px;
+  
+}
+
 @media (min-width: 700px) {
   
   h1 {
@@ -667,17 +681,25 @@ padding-block: 20px;
     grid-template-columns:2fr 2fr;
     column-gap: 2em;
 
+
   }
 
   .analoggrid {
     display: grid;
     grid-template-columns: 2fr 2fr;
     gap: 2em;
+    place-content: start space-evenly
+  }
 
+    .analoggrid button{
+      place-content: start space-evenly
+
+      
+    }
 
     
 
-  }
+  
 
   .analogcard button{
     align-content:flex-end;
