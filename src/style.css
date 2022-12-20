@@ -367,7 +367,7 @@ button:active {
 .hvadbetyder3 {
   height: var(--spørgsmål-card-height);
   width: var(--spørgsmål-card-width);
-  box-shadow: var(--spørgsmål-card-shadow);
+  box-shadow: var(--shadow-level-3);
   padding: var(--spørgsmål-card-padding);
 }
 .hvadbetyder1 {
