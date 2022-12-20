@@ -1,5 +1,44 @@
 import "./style.css";
 import "./header.css";
+/* Import af Motion One bibliotek */
+import { animate, stagger, inView, scroll, timeline } from "motion"
+
+
+inView(" .lianimate", () => {
+  animate(
+    " .lianimate",
+    { opacity: [0, 1] },
+    {
+      delay: stagger(0.5, { start: 0.2 }),
+    }
+  );
+});
+
+
+
+inView(" .anmelderkort", () => {
+  animate(
+    " .anmelderkort",
+    { opacity: [ 0, 1], scale: [ 1] }, 
+  { delay: 1, duration: 5, direction: "alternate" }
+  );
+});
+
+
+inView( ".hvadbetyder1" , () =>{
+  animate( ".hvadbetyder1", { x: [-2000, 0 ] }, { duration: 2 })
+})
+
+inView( ".hvadbetyder2" , () =>{
+  animate( ".hvadbetyder2", { x: [-2000, 0 ] }, { duration: 3 })
+})
+
+inView( ".hvadbetyder3" , () =>{
+  animate( ".hvadbetyder3", { x: [-2000, 0 ] }, { duration: 4 })
+})
+  
+
+
 
 // Lav en variabel, der refererer til ".toggle-btn"
 const btn = document.querySelector(".toggle-btn");
@@ -30,3 +69,5 @@ function toggleMenu() {
 
 /* Tilføj et klik-event til btn, der sætter toggleMenu-funktionen i gang */
 btn.addEventListener("click", toggleMenu);
+
+
