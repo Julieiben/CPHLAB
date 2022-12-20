@@ -153,7 +153,7 @@
   /*SKRIFTTYPER*/
   --font-family-h1: Exo 2, sans-serif;
   --font-family-h2-h4: Palanquin, sans-serif;
-  --font-family-p: Palatino Linotype, serif;
+  --font-family-p: Roboto, sans-serif;
 
   /*SKRIFTSTØRRELSE*/
   --font-size-h1-mobil: 25px;
@@ -222,6 +222,7 @@ p {
   padding: 20px;
   line-height: var(--line-height-text);
   letter-spacing: var(--letter-spacing-double);
+  font-family: var(--font-family-p);
 }
 
 .analogcard button {
@@ -486,7 +487,6 @@ h1 {
   font-family: var(--font-family-h1);
   color: var(--color-green-dark);
   line-height: var(--line-height-heading);
-  letter-spacing: var(--letter-spacing-double);
 }
 
 h2 {
@@ -497,7 +497,6 @@ h2 {
   font-family: var(--font-family-h2-h4);
   color: var(--color-green-dark);
   line-height: var(--line-height-heading);
-  letter-spacing: var(--letter-spacing-double);
 }
 h3 {
   text-align: center;
@@ -506,7 +505,6 @@ h3 {
   font-size: var(--font-size-h3-mobil);
   padding-top: 0.5em;
   line-height: var(--line-height-heading);
-  letter-spacing: var(--letter-spacing-double);
 }
 
 h4 {
@@ -515,7 +513,6 @@ h4 {
   padding-top: 0.5em;
   font-size: var(--font-size-h4-web);
   line-height: var(--line-height-heading);
-  letter-spacing: var(--letter-spacing-double);
 }
 
 h5 {
@@ -526,6 +523,7 @@ h5 {
 p {
   font-family: var(--font-family-p);
   font-size: var(--font-size-p-mobil);
+  font-family: 'Roboto', sans-serif;;
 }
 
 .kategoriknap button {
