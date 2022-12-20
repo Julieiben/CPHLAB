@@ -78,17 +78,18 @@
     <img class="w-screen" src="/img/filmrullegitter.png" alt="">
 
 
-    <section>
+    <section class="prisliste">
         <h2>Prisliste på smalfilms-overspilninger</h2>
 <h3>Vælg smalfilm og kvalitet</h3>
-</section>
 
-<section class=" smalfilmbutton   ">
+
+<div class=" ">
+<section class="  smalfilmbutton   ">
 <div class="" x-data="{ open: false }" x-cloak>
 
 
   <button @click="open = ! open" :aria-expanded="open" aria-controls="smalfilm og kvalitet prislise">8mm SD</button>
-  <ol class="" x-show="open" id="priser">
+  <ol class="" x-show="open" id="">
    <div class="">
     <h3>Opstart</h3>
     <p>250 Kr.</p>
@@ -114,7 +115,7 @@
 
 <div class="smalfilm_og_kvalitet" x-data="{ open: false }" x-cloak>
     <button @click="open = ! open" :aria-expanded="open" aria-controls="tracklist">8mm HD 720p</button>
-    <ol class="" x-show="open" id="priser">
+    <ol class="" x-show="open" id="">
      <div>
       <h4>Opstart</h4>
       <p>250 Kr.</p>
@@ -164,7 +165,7 @@
   
   <div x-data="{ open: false }" x-cloak>
     <button @click="open = ! open" :aria-expanded="open" aria-controls="tracklist">9,5mm SD</button>
-    <ol x-show="open" id="priser">
+    <ol x-show="open" id="">
      <div>
       <h3>Opstart</h3>
       <p>350 Kr.</p>
@@ -190,7 +191,7 @@
   
   <div x-data="{ open: false }" x-cloak>
     <button @click="open = ! open" :aria-expanded="open" aria-controls="tracklist">9,5mm HD 720P</button>
-    <ol x-show="open" id="priser">
+    <ol x-show="open" id="">
      <div>
       <h3>Opstart</h3>
       <p>350 Kr.</p>
@@ -216,7 +217,7 @@
   
   <div x-data="{ open: false }" x-cloak>
     <button @click="open = ! open" :aria-expanded="open" aria-controls="tracklist">9,4mm HD 1080p</button>
-    <ol x-show="open" id="priser">
+    <ol x-show="open" id="">
      <div>
       <h3>Opstart</h3>
       <p>350 Kr.</p>
@@ -242,7 +243,7 @@
   
   <div x-data="{ open: false }" x-cloak>
     <button @click="open = ! open" :aria-expanded="open" aria-controls="tracklist">16mm HD 720p</button>
-    <ol x-show="open" id="priser">
+    <ol x-show="open" id="">
      <div>
       <h3>Opstart</h3>
       <p>450 Kr.</p>
@@ -268,7 +269,7 @@
   
   <div x-data="{ open: false }" x-cloak>
     <button @click="open = ! open" :aria-expanded="open" aria-controls="tracklist">16mm HD 1080p</button>
-    <ol x-show="open" id="priser">
+    <ol x-show="open" id="">
      <div>
       <h3>Opstart</h3>
       <p>450 Kr.</p>
@@ -295,7 +296,7 @@
   
   <div x-data="{ open: false }" x-cloak>
     <button @click="open = ! open" :aria-expanded="open" aria-controls="tracklist">16mm 2K</button>
-    <ol x-show="open" id="priser">
+    <ol x-show="open" id="">
      <div>
       <h3>Opstart</h3>
       <p>450 Kr.</p>
@@ -321,7 +322,7 @@
   
   <div x-data="{ open: false }" x-cloak>
     <button @click="open = ! open" :aria-expanded="open" aria-controls="tracklist">16mm 4K</button>
-    <ol x-show="open" id="priser">
+    <ol x-show="open" id="">
      <div>
       <h3>Opstart</h3>
       <p>450 Kr.</p>
@@ -346,8 +347,8 @@
   
     </section>
     <img class="w-screen" src="/img/filmrullegitter.png" alt="">
-
-
+  </div>
+</section>
 
 <br>
 <br>
@@ -362,7 +363,7 @@
         <label for="fname">Fornavn</label>
       </div>
       <div class="col-75">
-        <input type="text" id="fname" name="firstname" placeholder="eks. jENS">
+        <input type="text" id="fname" name="firstname" placeholder="eks. Jens">
       </div>
     </div>
     <div class="row">
