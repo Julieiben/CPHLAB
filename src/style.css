@@ -191,6 +191,11 @@
   padding: var(--grid-gap);
 }
 
+.anmelderkort article {
+  padding: 24px;
+  margin-inline: auto;
+}
+
 section {
   margin-block-end: var(--section-gap-y-mobil);
 }
@@ -203,6 +208,7 @@ article {
   width: 150px;
   height: auto;
 }
+
 /*LISTE*/
 ul {
   list-style-type: square;
@@ -600,14 +606,18 @@ footer button {
 
   .analogcard img {
     width: 300px;
-    height: auto;
   }
+
   .analogcard {
     height: auto;
     width: auto;
     display: grid;
     grid-template-columns: 2fr 2fr;
     column-gap: 2em;
+  }
+
+  .analogcard #carousel {
+    width: 300px;
   }
 
   .analoggrid {
@@ -1000,4 +1010,10 @@ p {
 
 ul li {
   list-style-type: square;
+}
+
+footer form button,
+footer form {
+  padding: 0%;
+  height: 49px;
 }
