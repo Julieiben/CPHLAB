@@ -696,8 +696,9 @@ padding-block: 30px;
     place-content: start space-evenly
   }
 
-    .analoggrid button{
-      place-content: start space-evenly
+    .analogcard button{
+      place-content: start space-evenly;
+      font-size: var(--font-size-button-web);
 
       
     }
