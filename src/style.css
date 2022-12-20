@@ -74,7 +74,7 @@
   --cta-button-radius-web: 10px;
   --cta-button-background-standard: #c6613c;
   --cta-button-text-color: #ffffff;
-  --cta-button-dropshadow: 5px 10px 20px black;
+  --cta-button-dropshadow: var(--shadow-level-3);
   --cta-button-hover: #97bab3;
 
   /*cta knap mobil*/
@@ -83,7 +83,7 @@
   --cta-button-radius-mobil: 10px;
   --cta-button-background-standard: #c6613c;
   --cta-button-text-color: #ffffff;
-  --cta-button-dropshadow: 5px 10px 20px black;
+  --cta-button-dropshadow: var(--shadow-level-3);
   --cta-button-hover: #97bab3;
 
   /*FARVER*/
@@ -327,7 +327,7 @@ button:active {
   font-size: var(--font-size-button-mobil);
 
   color: var(--color-primary-white);
-  box-shadow: var(--button-dropshadow);
+  box-shadow: var(--shadow-level-3);
 }
 
 .ctaknap:hover {
@@ -468,14 +468,6 @@ border-color: var(--color-blue-light);
 
 #priser p {
   text-align: left;
-}
-
-.kategoriknap {
-  display: grid;
-  grid-template-columns: 2fr 2fr;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
 }
 
 h1 {
