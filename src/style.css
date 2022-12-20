@@ -229,7 +229,7 @@ p {
   font-family: var(--font-family-h2-h4);
   width: var(--button-width-mobil);
   height: var(--button-height-mobil);
-  box-shadow: var(--button-dropshadow);
+  box-shadow: var(--shadow-level-3);
   border-radius: var(--button-radius-mobil);
   background-color: var(--color-green);
   margin-top: 10px;
@@ -247,17 +247,19 @@ body {
   overflow: auto;
   scroll-snap-type: x mandatory;
 }
-
 .analogcard #carousel {
   background-color: var(--color-white-clean);
-
-  box-shadow: var(--button-dropshadow);
   margin: 10px;
   grid-template-columns: 1fr 1fr;
   flex-shrink: 0;
   scroll-snap-align: start;
+
 }
+
+
 .fremkaldelsegrid #carousel li {
+  
+
   background-color: var(--color-white-clean);
   margin: 10px;
   gap: 2em;
@@ -292,7 +294,6 @@ body {
 .analoggrid .carousel li {
   background-color: var(--color-white-clean);
 
-  box-shadow: var(--button-dropshadow);
   margin: 10px;
   flex-shrink: 0;
   scroll-snap-align: start;
