@@ -611,7 +611,7 @@ footer button {
     place-content: start space-evenly;
   }
 
-<<<<<<< HEAD
+ 
     .analogcard button{
       place-content: start space-evenly;
       font-size: var(--font-size-button-web);
@@ -622,11 +622,11 @@ footer button {
     
 
   
-=======
+
   .analoggrid button {
     place-content: start space-evenly;
   }
->>>>>>> 8b8269c65e87d8e95c63912a2ac717f2f7c6e92c
+
 
   .analogcard button {
     align-content: flex-end;
@@ -693,35 +693,7 @@ footer button {
     color: var(--color-brown);
   }
 
-  /*
 
-form .input {
-  margin-block-end: 10px;
-  width: var(--input-width-web);
-  height: var(--input-height-web);
-border-radius: var(--radius-large);
-border: 2px solid var(--color-brown);
- }
-
-  .inputkommentar {
-  margin-block-end: 10px;
-  width: var(--input-width-web);
-  height: 15em;
-border-radius: var(--radius-large);
-border: 2px solid var(--color-brown);
- }
-
-.formgrid{
-
- 
-
-}
-
-.formgrid img {
-  place-content: right;
-  margin-top: 50%;
-}
-*/
 
   .fremkaldelsegrid #carousel li {
     width: 400px;
