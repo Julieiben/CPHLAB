@@ -5,87 +5,144 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:wght@800&family=Palanquin:wght@400;700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <title>Vite App</title>
   </head>
-  <body class=" place-items-center  prose">
+
+  <header class="banner place-items-center md:flex md:justify-between w-full">
+    <div class="flex justify-between">
+      <a href="index.html"><img src="/img/logo.svg" alt="Logo" /></a>
+
+      <button class="toggle-btn">☰</button>
+    </div>
+
+    <nav class="navbar">
+      <ul class="gap-5 text-center md:flex">
+        <div class="dropdown place-self-center">
+          <li class="dropbtn">SHOP</li>
+          <div class="dropdown-content">
+            <a href="fremkaldelse.html">BESTIL FREMKALDELSE</a>
+            <a href="#0">KØB FILM & GAVEKORT</a>
+            <a href="#0">VIDEO OVERSPILNING</a>
+            <a href="smalfilm-overspillet.html">SMALFILM OVERSPILNING</a>
+            <a href="#0">SCAN AF LYSBILLEDER</a>
+            <a href="#0">SCAN AF PAPIRBILLEDER</a>
+          </div>
+        </div>
+        <li class="md:place-self-center">
+          <a href="analogguide.html">ANALOG-GUIDE</a>
+        </li>
+        <li class="md:place-self-center"><a href="#0">SÅDAN GØR DU</a></li>
+        <li class="md:place-self-center"><a href="#0">OM OS</a></li>
+        <li class="md:place-self-center"><a href="#0">FAQ</a></li>
+        <li class="grid place-content-center">
+          <a href=""><img src="/img/Bag.svg" alt="Kurv" /></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <body class="  mx-10 md:mx-20   ">
 
 
    
     <br>
 
-    <section id="section1" class="text-center ">
+    <section id="section1" class=" ">
       <h1 class=" font-bold">CPH-LAB'S ANALOG-GUIDE</h1>
       <h3>Her kan du blive klogere på film & se billede-eksempler.</h3>
     </section>
 
-    <section>
-      <h2 class="text-center ">UDVALGTE FILM</h2>
-      <div class="gap-4  ">
-
+    <section class="">
+      <h2 class=" ">UDVALGTE FILM</h2>
      
-       
-        <article class="  analogcard  gap-4 md:grid grid-cols-2">
+     
+      <div class=" analoggrid   ">
 
-          <h3 class="text-center font-bold">KODAK PORTRA</h3>
 
-          <div class="mx-16 " id="carousel">
+        <article class="  analogcard  ">
+
+<div>
+  <h3 class=" ">KODAK PORTRA</h3>
+
+          <div class=" carousel " id="carousel">
+
             
-            <li><img src="/img/120fremkaldelse.png" alt="Vite Logo" /></li>
-            <li><img src="/img/120fremkaldelse.png" alt="Vite Logo" /></li>
-            <li><img src="/img/120fremkaldelse.png" alt="Vite Logo" /></li>
-
-          
+            <li><img src="/img/kodakportra400-1.webp" alt="Vite Logo" /></li>
+            <li><img src="/img/kodakportra400-2.webp" alt="Vite Logo" /></li>
+            <li><img src="/img/kodakportra400-3.webp" alt="Vite Logo" /></li>
           </div>
-          <div>
-            <h4 class="text-center">160, 400 & 800 Perfekt til portrætter</h4>
+        </div>
+          
+          
+         
+          <div class=""> 
+            <h4 class="">160, 400 & 800 Perfekt til portrætter</h4>
             <p>
               Kodak Portra-serien er blandt Kodaks professionelle film, og de er
               helt bestemt blandt de mest populære film på markedet. De er kendt
               for deres exceptionelle hudtoner...
             </p>
+
+           
+              <button >Køb her</button>
+            
            
           </div>
-          <div class="mx-16">
-          <button >Køb her</button>
-        </div>
+        
+        
         </article>
-        <br>
+        
 
-        <article class=" analogcard max-w-md flex-row gap-4 md:grid grid-cols-2">
-          <h3 class="text-center font-bold">KODAK COLORPLUS</h3>
+        <article class="  analogcard  ">
+<div>
+            <h3 class=" ">KODAK COLORPLUS</h3>
 
-          <div class="mx-16 " id="carousel">
+
+          <div class="carousel" id="carousel">
             
-            <li><img src="/img/120fremkaldelse.png" alt="Vite Logo" /></li>
-            <li><img src="/img/120fremkaldelse.png" alt="Vite Logo" /></li>
-            <li><img src="/img/120fremkaldelse.png" alt="Vite Logo" /></li>
-
+            <li><img src="/img/kodakcolorplus200-1.webp" alt="Vite Logo" /></li>
+            <li><img src="/img/kodakcolorplus200-2.webp" alt="Vite Logo" /></li>
+            <li><img src="/img/kodakcolorplus200-3.webp" alt="Vite Logo" /></li>
+          </div>
           
-          </div>          <div>
-            <h4 class="text-center">200 Prisstærk & rig på farver</h4>
+          </div>       
+             <div class="">
+            <h4 class="">200 Prisstærk & rig på farver</h4>
             <p>
               Kodak Colorplus 200 er i den prisstærke ende af Kodaks udvalg af
               farvefilm. Det er en fantastisk all-round film, der dur til de
               fleste situationer.
             </p>
-            <button>KØB HER</button>
+
+            <button >KØB HER</button>
           </div>
         </article>
-        <br>
+        
 
 
-        <article class=" analogcard max-w-md flex-row gap-4 md:grid grid-cols-2">
-          <h3 class="text-center font-bold">KODAK T-MAX</h3>
+        <article class="  analogcard   ">
+      
+          <div class=" ">
+            <h3 class="">KODAK T-MAX</h3>
 
-          <div class="mx-16 " id="carousel">
+
+          <div class="carousel" id="carousel">
             
-            <li><img src="/img/120fremkaldelse.png" alt="Vite Logo" /></li>
-            <li><img src="/img/120fremkaldelse.png" alt="Vite Logo" /></li>
-            <li><img src="/img/120fremkaldelse.png" alt="Vite Logo" /></li>
+            <li><img src="/img/kodaktmax400-1.webp" alt="Vite Logo" /></li>
+            <li><img src="/img/kodaktmax400-2.webp" alt="Vite Logo" /></li>
+            <li><img src="/img/kodaktmax400-3.webp" alt="Vite Logo" /></li>
 
           
-          </div>          <div>
-            <h4 class="text-center">400 Sort/hvid-stærk kontrast</h4>
+          </div> 
+        </div>
+        
+           <div class="">
+            <h4 class="">400 Sort/hvid-stærk kontrast</h4>
             <p>
               Kodak T-Max er en lysstærk og populær sort/hvid-film. Den er
               kontrastrig, og giver dybe skygger, men samtidig masser af
@@ -95,22 +152,27 @@
             <button >KØB HER</button>
           </div>
         </article>
-        <br>
+        
 
 
-        <article class="analogcard  max-w-md flex-row gap-4 md:grid grid-cols-2">
+        <article class="  analogcard  ">
 
-          <h3 class="text-center font-bold">CINESTILL 800T</h3>
+          <div class=" ">
+            <h3 class="">CINESTILL 800T</h3>
 
-          <div class="mx-16 " id="carousel">
+
+          <div class="carousel " id="carousel">
             
-            <li><img src="/img/120fremkaldelse.png" alt="Vite Logo" /></li>
-            <li><img src="/img/120fremkaldelse.png" alt="Vite Logo" /></li>
-            <li><img src="/img/120fremkaldelse.png" alt="Vite Logo" /></li>
+            <li><img src="/img/cinestill800t-1.webp" alt="Vite Logo" /></li>
+            <li><img src="/img/cinestill800t-2.webp" alt="Vite Logo" /></li>
+            <li><img src="/img/cinestill800t-3.webp" alt="Vite Logo" /></li>
 
           
-          </div>          <div>
-            <h4 class="text-center">Oprindeligt produceret til spillefilm</h4>
+          </div>         
+        </div>
+
+          <div class="">
+            <h4 class="">Oprindeligt produceret til spillefilm</h4>
             <p>
               Cinestill er et firma, der behandler film produceret til
               spillefilm således, at de kan puttes i et almindeligt
@@ -120,21 +182,28 @@
             <button >KØB HER</button>
           </div>
         </article>
-        <br>
+        
 
 
-        <article class=" analogcard max-w-md flex-row gap-4 grid md:grid-cols-2">
-          <h3 class="text-center font-bold">FUJI C200</h3>
+        <article class="  analogcard  ">
+         
+         
+          <div class=" ">
+            <h3 class="">FUJI C200</h3>
 
-          <div class="mx-16 " id="carousel">
+
+          <div class="carousel " id="carousel">
             
-            <li><img src="/img/120fremkaldelse.png" alt="Vite Logo" /></li>
-            <li><img src="/img/120fremkaldelse.png" alt="Vite Logo" /></li>
-            <li><img src="/img/120fremkaldelse.png" alt="Vite Logo" /></li>
+            <li><img src="/img/fujic200-1.webp" alt="Vite Logo" /></li>
+            <li><img src="/img/fujic200-2.webp" alt="Vite Logo" /></li>
+            <li><img src="/img/fujic200-3.webp" alt="Vite Logo" /></li>
 
           
-          </div>          <div>
-            <h4 class="text-center">Alsidig men med mættede farver</h4>
+          </div>         
+        </div>
+
+          <div class="">
+            <h4 class="">Alsidig men med mættede farver</h4>
             <p>
               Fuji C200 er en prisstærk farvefilm, der går til det meste. Den
               har flotte og stærke farver med en mere neutral varmetone i
@@ -143,22 +212,30 @@
             <button >KØB HER</button>
           </div>
         </article>
-        <br>
+        
 
 
-        <article class=" analogcard max-w-md flex-row gap-4 md:grid grid-cols-2">
+        <article class="  analogcard  ">
 
-          <h3 class="text-center font-bold">KODAK EKTAR</h3>
+         
+         
+          <div class=" ">
+            <h3 class="">KODAK EKTAR</h3>
 
-          <div class="mx-16 " id="carousel">
+
+          <div class="carousel " id="carousel">
             
-            <li><img src="/img/120fremkaldelse.png" alt="Vite Logo" /></li>
-            <li><img src="/img/120fremkaldelse.png" alt="Vite Logo" /></li>
-            <li><img src="/img/120fremkaldelse.png" alt="Vite Logo" /></li>
+            <li><img src="/img/kodakektar100-1.webp" alt="Vite Logo" /></li>
+            <li><img src="/img/kodakektar100-2.webp" alt="Vite Logo" /></li>
+            <li><img src="//img/kodakektar100-3.webp" alt="Vite Logo" /></li>
 
           
-          </div>          <div>
-            <h4 class="text-center">100 Skarp & finkornet</h4>
+          </div>        
+        </div>
+
+          <div class="">
+            <h4 class="">100 Skarp & finkornet</h4>
+
             <p>
               Kodak Ektar 100 er blandt Kodaks professionelle film og er
               kendetegnet ved sine meget præcise og kraftige farver, den er
@@ -170,9 +247,11 @@
       </div>
     </section>
 
-    <section>
-      <h2 class="text-center font-bold">HVAD BETYDER...</h2>
-      <div class="gap-y-12 md:grid md:grid-cols-3">
+    
+    <h2 class="text-center font-bold ">HVAD BETYDER...</h2>
+
+    <container class=" content md:grid grid-cols-3 gap-5">
+      
         <article class="hvadbetyder1">
           <h3 class="text-center font-bold">ISO</h3>
           <p>
@@ -187,8 +266,9 @@
             <li><span>ISO 800 og højere: Aften- og natbillede</span></li>
           </ul>
         </article>
-        <br>
-        <article class="hvadbetyder2">
+
+        
+        <article class="hvadbetyder2 ">
           <h3 class="text-center font-bold">Gryn/korn</h3>
           <p>
             Et udtryk der tit indgår i beskrivelsen af en film og som også ses i
@@ -200,7 +280,8 @@
             i større grad et æstetikvalg. Jo højere ISO, jo større gryn.
           </p>
         </article>
-        <br>
+        
+
         <article class="hvadbetyder3 ">
           <h3 class="text-center font-bold">Farve & sort/hvid</h3>
           <p>
@@ -214,8 +295,55 @@
             deres kontrast, samt lysfølsomheden og grovkornetheden.
           </p>
         </article>
-      </div>
-    </section>
+
+    </container>
+
+    <footer class="mt-10 p-10 px-12 md:flex md:justify-between">
+      <section class="flex justify-between md:block">
+        <a href="index.html"
+          ><img class="w-32" src="/img/logo.svg" alt="logo"
+        /></a>
+        <div class="flex justify-between gap-8 md:mt-8 md:justify-evenly">
+          <a href="https://www.facebook.com/CPHLABDK"
+            ><img src="/img/facebook.svg" alt="Facebook ikon"
+          /></a>
+          <a href="https://www.instagram.com/cph.lab/"
+            ><img src="/img/instagram.svg" alt="Instagram ikon"
+          /></a>
+        </div>
+      </section>
+      <section class="mt-8 md:mt-0">
+        <h4>KONTAKT</h4>
+        <p class="mt-4">info@cph-lab.dk</p>
+        <p class="mt-4">
+          CPH-LAB/ Hørsholm foto <br />
+          Hovedgaden 12, 2970, Hørsholm
+        </p>
+      </section>
+      <section class="info mt-8 md:mt-0">
+        <h4>INFO</h4>
+        <p class="mt-4 underline underline-offset-4">
+          Forsendelse og returnering
+        </p>
+        <p class="mt-4 underline underline-offset-4">Persondatapolitik</p>
+        <p class="mt-4 underline underline-offset-4">Handelsbetingelser</p>
+      </section>
+      <section class="mt-8 md:mt-0">
+        <h4>
+          Kan du ikke få nok af os? <br />
+          Tilmeld dig vores nyhedsbrev!
+        </h4>
+        <form class="mt-4 flex rounded-sm p-0">
+          <input
+            type="text"
+            id="fname"
+            value="jenshansen@email.dk"
+            class="rounded-sm border-none text-gray-500"
+          />
+          <button class="rounded-sm md:w-32">TILMELD</button>
+        </form>
+      </section>
+    </footer>
 
     <script type="module" src="./main.js"></script>
   </body>

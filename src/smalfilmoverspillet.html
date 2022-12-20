@@ -5,35 +5,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   <link
+     href="https://fonts.googleapis.com/css2?family=Exo+2:wght@800&family=Palanquin:wght@400;700&family=Roboto&display=swap"
+     rel="stylesheet"
+   />
     <title>Document</title>
 </head>
-<body class="prose mx-5">
+
+<header class="banner place-items-center md:flex md:justify-between">
+  <div class="flex justify-between">
+    <a href="index.html"><img src="/img/logo.svg" alt="Logo" /></a>
+
+    <button class="toggle-btn">☰</button>
+  </div>
+
+  <nav class="navbar">
+    <ul class="gap-5 text-center md:flex">
+      <div class="dropdown place-self-center">
+        <li class="dropbtn">SHOP</li>
+        <div class="dropdown-content">
+          <a href="fremkaldelse.html">BESTIL FREMKALDELSE</a>
+          <a href="#0">KØB FILM & GAVEKORT</a>
+          <a href="#0">VIDEO OVERSPILNING</a>
+          <a href="smalfilm-overspillet.html">SMALFILM OVERSPILNING</a>
+          <a href="#0">SCAN AF LYSBILLEDER</a>
+          <a href="#0">SCAN AF PAPIRBILLEDER</a>
+        </div>
+      </div>
+      <li class="md:place-self-center">
+        <a href="analogguide.html">ANALOG-GUIDE</a>
+      </li>
+      <li class="md:place-self-center"><a href="#0">SÅDAN GØR DU</a></li>
+      <li class="md:place-self-center"><a href="#0">OM OS</a></li>
+      <li class="md:place-self-center"><a href="#0">FAQ</a></li>
+      <li class="grid place-content-center">
+        <a href=""><img src="/img/Bag.svg" alt="Kurv" /></a>
+      </li>
+    </ul>
+  </nav>
+</header>
+<body class=" mx-10 ">
 
 
     
+  <h1 class="text-center"> Indscanning af smalfilmfilm</h1>
+  <h3>VI INDSCANNER & DIGITALISERER DINE SMALFILM I PROFESSIONEL KVALITET</h3>
 
-    <section>
-        <h1>Indscanning af smalfilmfilm</h1>
-        <h3>VI INDSCANNER & DIGITALISERER DINE SMALFILM I PROFESSIONEL KVALITET</h3>
-        <img src="/img/smalfilmbillede.png" alt="">
+    <section class="smalfilmhero">
+        <div class="text-center">
+
+        <img class="" src="/img/smalfilmbillede.png" alt="">
+      </div>
+      <div class="">
         <h2>INDSCANNING AF SMALFILM GJORT NEMT & ENKELT</h2>
         <p>Vi kan indscanne og digitalisere dine smalfilm i professionel kvalitet om det bare er til at dele med familien eller til en professionel videoproduktion.
         </p>
+      
         <ol>
-        <li>Udfyld formular forneden.</li>
-        <li>Modtag prisoverslag.</li>
-        <li>Send eller indlevér dine smalfilm til os.</li>
-        <li>Modtag videofiler på mail eller på USB.</li>
-    </ol>
+          <li>Udfyld formular forneden.</li>
+          <li>Modtag prisoverslag.</li>
+          <li>Send eller indlevér dine smalfilm til os.</li>
+          <li>Modtag videofiler på mail eller på USB.</li>
+      </ol>
+
+    </div>
     </section>
     
 
 
-    
+    <img class="w-screen" src="/img/filmrullegitter.png" alt="">
+
 
     <section>
         <h2>Prisliste på smalfilms-overspilninger</h2>
-<p>Vælg smalfilm og kvalitet</p>
+<h3>Vælg smalfilm og kvalitet</h3>
 </section>
 
 <section class=" smalfilmbutton   ">
@@ -61,14 +108,15 @@
     <p>15 Kr.</p>
    </div>
   </ol>
+  <br>
 </div>
-<br>
+
 
 <div class="smalfilm_og_kvalitet" x-data="{ open: false }" x-cloak>
     <button @click="open = ! open" :aria-expanded="open" aria-controls="tracklist">8mm HD 720p</button>
     <ol class="" x-show="open" id="priser">
      <div>
-      <h3>Opstart</h3>
+      <h4>Opstart</h4>
       <p>250 Kr.</p>
      </div>
      <div>
@@ -86,12 +134,13 @@
       <p>15 Kr.</p>
      </div>
     </ol>
+    
   </div>
-  <br>
+  
 
   <div x-data="{ open: false }" x-cloak>
     <button @click="open = ! open" :aria-expanded="open" aria-controls="tracklist">8mm HD 1080P</button>
-    <ol x-show="open" id="priser">
+    <ol x-show="open" id="">
      <div>
       <h3>Opstart</h3>
       <p>250 Kr.</p>
@@ -112,7 +161,7 @@
      </div>
     </ol>
   </div>
-   <br>
+  
   <div x-data="{ open: false }" x-cloak>
     <button @click="open = ! open" :aria-expanded="open" aria-controls="tracklist">9,5mm SD</button>
     <ol x-show="open" id="priser">
@@ -137,7 +186,7 @@
     </ol>
   </div>
 
-  <br>
+  
   
   <div x-data="{ open: false }" x-cloak>
     <button @click="open = ! open" :aria-expanded="open" aria-controls="tracklist">9,5mm HD 720P</button>
@@ -163,7 +212,7 @@
     </ol>
   </div>
 
-  <br>
+  
   
   <div x-data="{ open: false }" x-cloak>
     <button @click="open = ! open" :aria-expanded="open" aria-controls="tracklist">9,4mm HD 1080p</button>
@@ -189,7 +238,7 @@
     </ol>
   </div>
 
-  <br>
+  
   
   <div x-data="{ open: false }" x-cloak>
     <button @click="open = ! open" :aria-expanded="open" aria-controls="tracklist">16mm HD 720p</button>
@@ -215,7 +264,7 @@
     </ol>
   </div>
 
-  <br>
+  
   
   <div x-data="{ open: false }" x-cloak>
     <button @click="open = ! open" :aria-expanded="open" aria-controls="tracklist">16mm HD 1080p</button>
@@ -241,7 +290,7 @@
     </ol>
   </div>
   
-  <br>
+  
 
   
   <div x-data="{ open: false }" x-cloak>
@@ -268,7 +317,7 @@
     </ol>
   </div>
 
-  <br>
+  
   
   <div x-data="{ open: false }" x-cloak>
     <button @click="open = ! open" :aria-expanded="open" aria-controls="tracklist">16mm 4K</button>
@@ -294,42 +343,86 @@
     </ol>
   </div>
   
-  <br>
-
+  
     </section>
+    <img class="w-screen" src="/img/filmrullegitter.png" alt="">
+
 
 
 <br>
 <br>
 <br>
-    <section>
-        <form>
-            <h2>UDFYLD FORMULAR & MODTAG BESTILLINGSLINK</h2>
+<h2>UDFYLD FORMULAR & MODTAG BESTILLINGSLINK</h2>
 
-            <label  for="fname">Fornavn:</label><br>
-            <input class="input" type="text"  name="fname"><br>
-            <label for="lname">Efternavn:</label><br>
-            <input class="input" type="text"  name="lname"><br>
-            <label for="fname">Email::</label><br>
-            <input class="input" type="text"  name="fname"><br>
-            <label for="lname">Telefonnummer::</label><br>
-            <input class="input" type="text" name="lname"><br>
-<br>
-            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-             <label for="vehicle1"> USB/HDD KOPI: + 249 KR.*</label><br>
-          <h4>SMALFILM INFO</h4>
-          <p>Skriv her antal ruller, type af smalfilm, diameter på dem og hvilken kvalitet de ønskes scannet i:</p>
-          <label for="lname">  <label for="lname"></label>
-            <input type="text"  name="lname"><br></label><br>
-            <button>Indsend</button>
-        </form>
-    </section>
-    <br>
+<div class="formgrid">
+<div class="container">
+  <form action="action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">Fornavn</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="eks. jENS">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Efternavn</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="eks. Jensen">
+      </div>
+    </div>
 
-    <section class="spørgsmål">
-        <h3>HAR DU SPØRGSMÅL?</h3>
-        <p>Du finder svar på mange spørgsmål under vores FAQ, og ellers skal du altid være velkommen til at kontakte os. Du kan finde vores kontaktinformationer på Om os siden.</p>
-    </section>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">E-mail:</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="eks. jens@jensen@mail.dk..">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Telefonnummer:</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="+45 xxxxxxxx..">
+      </div>
+    </div>
+    <div>
+<label for="usb/hddkopi">USB/HDD KOPI: + 249 KR.*</label>
+    <input type="checkbox" name="" id="">
+  </div>
+   
+    <div class="row">
+      <div class="col-25">
+   
+      </div>
+      <div class="col-75">
+        <h4 class="text-left">SMALFILM INFO:</h4>
+        <p for="subject">Skriv her antal ruller, type af smalfilm, diameter på dem og hvilken kvalitet de ønskes scannet i:</P>
+        <textarea id="subject" name="subject" placeholder="Skriv din kommentar her" style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="INDSEND">
+    </div>
+  </form>
+</div>
+<div>
+    <img src="/img/smalfilmoverspillet2.png" alt="">
+
+  <section class="spørgsmål">
+    <h3>HAR DU SPØRGSMÅL?</h3>
+    <p>Du finder svar på mange spørgsmål under vores FAQ, og ellers skal du altid være velkommen til at kontakte os. Du kan finde vores kontaktinformationer på Om os siden.</p>
+</section>
+</div>
+
+  </div>
+
+  
     <script src="https://unpkg.com/alpinejs@3.9.1/dist/cdn.min.js" integrity="sha384-mDHH3kdyMS0F6QcfHCxEgPMMjssTurzucc7Jct3g1GOfB4p7PxJuugPP1NOLvE7I" crossorigin="anonymous"></script>
 
     <script type="module" src="./main.js"></script>
