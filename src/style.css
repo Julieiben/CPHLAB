@@ -303,6 +303,11 @@ scroll-snap-align: start;
 width: fit-content;
 place-content: start space-evenly;}
 
+
+.fremkaldelsegrid #carousel li:hover{
+  transform: scale(1.2)
+}
+
 .fremkaldelsegrid img{
   margin: 1em;
 }
