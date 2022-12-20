@@ -14,6 +14,15 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, "src/index.html"),
+        fremkaldelse: resolve(__dirname, "src/fremkaldelse.html"),
+        analogguide: resolve(__dirname, "src/analogguide.html"),
+        singleview: resolve(__dirname, "src/singleview.html"),
+        smalfilmoverspillet: resolve(__dirname, "src/smalfilmoverspillet.html"),
+
+
+
+
+
         // about: resolve(__dirname, "src/about.html"),
       },
     },
