@@ -74,7 +74,7 @@
   --cta-button-radius-web: 10px;
   --cta-button-background-standard: #c6613c;
   --cta-button-text-color: #ffffff;
-  --cta-button-dropshadow: 5px 10px 20px black;
+  --cta-button-dropshadow: var(--shadow-level-3);
   --cta-button-hover: #97bab3;
 
   /*cta knap mobil*/
@@ -83,7 +83,7 @@
   --cta-button-radius-mobil: 10px;
   --cta-button-background-standard: #c6613c;
   --cta-button-text-color: #ffffff;
-  --cta-button-dropshadow: 5px 10px 20px black;
+  --cta-button-dropshadow: var(--shadow-level-3);
   --cta-button-hover: #97bab3;
 
   /*FARVER*/
@@ -260,7 +260,6 @@ body {
 }
 .fremkaldelsegrid #carousel li {
   background-color: var(--color-white-clean);
-  box-shadow: var(--button-dropshadow);
   margin: 10px;
   gap: 2em;
   display: grid;
@@ -269,6 +268,18 @@ body {
   scroll-snap-align: start;
   width: fit-content;
   place-content: start space-evenly;
+  display: flex;
+  flex-flow: column;
+}
+
+.fremkaldelsegrid #carousel li h3 {
+  float: inline-start;
+  margin: 18px;
+}
+
+.fremkaldelsegrid #carousel li h5 {
+  float: inline-end;
+  margin: 18px;
 }
 
 .fremkaldelsegrid #carousel li:hover {
@@ -328,7 +339,7 @@ button:active {
   font-size: var(--font-size-button-mobil);
 
   color: var(--color-primary-white);
-  box-shadow: var(--button-dropshadow);
+  box-shadow: var(--shadow-level-3);
 }
 
 .ctaknap:hover {
@@ -471,14 +482,6 @@ border-color: var(--color-blue-light);
   text-align: left;
 }
 
-.kategoriknap {
-  display: grid;
-  grid-template-columns: 2fr 2fr;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
 h1 {
   text-align: center;
   text-transform: uppercase;
@@ -609,22 +612,14 @@ footer button {
     place-content: start space-evenly;
   }
 
- 
-    .analogcard button{
-      place-content: start space-evenly;
-      font-size: var(--font-size-button-web);
-
-      
-    }
-
-    
-
-  
+  .analogcard button {
+    place-content: start space-evenly;
+    font-size: var(--font-size-button-web);
+  }
 
   .analoggrid button {
     place-content: start space-evenly;
   }
-
 
   .analogcard button {
     align-content: flex-end;
@@ -690,8 +685,6 @@ footer button {
     border: 2px solid var(--color-green-dark);
     color: var(--color-brown);
   }
-
-
 
   .fremkaldelsegrid #carousel li {
     width: 400px;
@@ -760,3 +753,246 @@ input[type="submit"] {
 /* Clear floats after the columns */
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+
+/* HEADER */
+.banner {
+  background: #584239; /*SKAL LAVES TIL VARIABEL*/
+}
+
+.banner ul {
+  list-style: none;
+  padding: 0;
+}
+
+.banner a,
+.dropbtn {
+  padding: 0.5rem;
+  justify-content: space-evenly;
+  border-radius: 0.5rem;
+  font-family: "Palanquin", sans-serif;
+  color: #fbf5ec; /*SKAL LAVES TIL VARIABEL*/
+}
+
+.dropbtn {
+  cursor: default;
+}
+
+.banner a:hover {
+  color: #f2e291; /*SKAL LAVES TIL VARIABEL*/
+}
+
+header button {
+  color: #fbf5ec; /*SKAL LAVES TIL VARIABEL*/
+}
+
+header button:hover {
+  color: #f2e291; /*SKAL LAVES TIL VARIABEL*/
+  background: none;
+}
+
+header button:active {
+  background: none;
+  box-shadow: none;
+  box-shadow: none;
+}
+
+/* BURGERMENU */
+.toggle-btn {
+  display: none;
+}
+
+header a {
+  list-style: none;
+  text-decoration: none;
+  color: #fbf5ec; /*SKAL LAVES TIL VARIABEL*/
+}
+
+header li {
+  list-style: none;
+  text-decoration: none;
+}
+
+/*BURGERMENU */
+@media (max-width: 700px) {
+  .toggle-btn {
+    background: transparent;
+    border: none;
+    display: block;
+    min-width: 44px;
+    min-height: 44px;
+    font-size: 1.1rem;
+    cursor: pointer;
+  }
+
+  nav {
+    display: none;
+  }
+
+  nav.shown {
+    padding-top: 1rem;
+    display: flex;
+    flex: 1 1 100%;
+    flex-flow: column;
+  }
+
+  nav ul {
+    display: flex;
+    flex-flow: column;
+  }
+}
+
+.toggle-btn {
+  width: 40px;
+  background-color: none;
+  box-shadow: none;
+}
+
+/*DROPDOWN*/
+.navbar {
+  overflow: hidden;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
+  background-color: #584239; /*SKAL LAVES TIL VARIABEL*/
+  border-width: 2px;
+  border-color: #f2e291; /*SKAL LAVES TIL VARIABEL*/
+  border-radius: 1%;
+}
+
+@media (max-width: 700px) {
+  .dropdown-content {
+    left: 51% !important;
+    right: auto !important;
+    text-align: center !important;
+    transform: translate(-51%, 0) !important;
+  }
+}
+
+.dropdown-content a {
+  float: none;
+  display: block;
+  text-align: center;
+  background-color: inherit;
+  padding: 14px 16px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*FOOTER*/
+footer {
+  background-color: #584239;
+}
+
+footer h4 {
+  color: #f2e291;
+}
+
+footer p {
+  color: #fbf5ec;
+}
+
+footer button {
+  box-shadow: none;
+  height: 41px;
+  align-items: stretch;
+  font-family: "Palanquin", sans-serif;
+}
+
+footer button:active {
+  box-shadow: none;
+}
+
+/*FORSIDE KNAP*/
+@media (min-width: 700px) {
+  #forside_hero {
+    position: relative;
+  }
+
+  #forside_hero button {
+    position: absolute;
+    top: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+}
+
+/*SINGLEVIEW - FORM ANDERLEDES*/
+.single-form {
+  background-color: transparent;
+}
+
+/*SCROLLBAR FJERNES*/
+/*I webkins-browsere*/
+body #carousel::-webkit-scrollbar {
+  display: none;
+}
+
+/*I Firefox*/
+html #carousel {
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/*I Firefox*/
+html {
+  scrollbar-width: none;
+}
+
+/*TYPOGARFI - SKAL I MAIN*/
+h1 {
+  font-family: "Exo 2", sans-serif;
+  color: #6f8a85;
+  font-weight: bold;
+  font-size: 220%;
+  line-height: 130%;
+  padding-block: 4%;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: x-large;
+  font-family: "Palanquin", sans-serif;
+  color: #241c19;
+  text-align: center;
+  padding-block: 40px;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: larger;
+  font-family: "Palanquin", sans-serif;
+  color: #241c19;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: large;
+  font-family: "Palanquin", sans-serif;
+  color: #241c19;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  color: #241c19;
+}
+
+ul li {
+  list-style-type: square;
+}

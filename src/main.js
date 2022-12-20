@@ -1,8 +1,6 @@
 import "./style.css";
-import "./header.css";
 /* Import af Motion One bibliotek */
-import { animate, stagger, inView, scroll, timeline } from "motion"
-
+import { animate, stagger, inView, scroll, timeline } from "motion";
 
 inView(" .lianimate", () => {
   animate(
@@ -14,31 +12,25 @@ inView(" .lianimate", () => {
   );
 });
 
-
-
 inView(" .anmelderkort", () => {
   animate(
     " .anmelderkort",
-    { opacity: [ 0, 1], scale: [ 1] }, 
-  { delay: 1, duration: 5, direction: "alternate" }
+    { opacity: [0, 1], scale: [1] },
+    { delay: 1, duration: 5, direction: "alternate" }
   );
 });
 
+inView(".hvadbetyder1", () => {
+  animate(".hvadbetyder1", { x: [-2000, 0] }, { duration: 2 });
+});
 
-inView( ".hvadbetyder1" , () =>{
-  animate( ".hvadbetyder1", { x: [-2000, 0 ] }, { duration: 2 })
-})
+inView(".hvadbetyder2", () => {
+  animate(".hvadbetyder2", { x: [-2000, 0] }, { duration: 3 });
+});
 
-inView( ".hvadbetyder2" , () =>{
-  animate( ".hvadbetyder2", { x: [-2000, 0 ] }, { duration: 3 })
-})
-
-inView( ".hvadbetyder3" , () =>{
-  animate( ".hvadbetyder3", { x: [-2000, 0 ] }, { duration: 4 })
-})
-  
-
-
+inView(".hvadbetyder3", () => {
+  animate(".hvadbetyder3", { x: [-2000, 0] }, { duration: 4 });
+});
 
 // Lav en variabel, der refererer til ".toggle-btn"
 const btn = document.querySelector(".toggle-btn");
@@ -47,7 +39,7 @@ const nav = document.querySelector("nav");
 
 // Lav en function, der hedder toggleMenu()
 function toggleMenu() {
- console.log("hey")
+  console.log("hey");
   // 1. Toggle en klasse på nav vha. classList.toggle
   // 2. Toggle en klasse, der hedder "shown"
   nav.classList.toggle("shown");
@@ -69,5 +61,3 @@ function toggleMenu() {
 
 /* Tilføj et klik-event til btn, der sætter toggleMenu-funktionen i gang */
 btn.addEventListener("click", toggleMenu);
-
-
