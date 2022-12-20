@@ -7,8 +7,17 @@
 
 :root {
 
-  --option-knap-background: -;
+  --option-knap-background: #E8DCCA;
   --option-knap-border: 2px;
+  --option-knap-border-color-hover: #596D58;
+  --option-knap-text-color: var(--color-brown);
+
+  --option-knap-background-hover: #596D58 ;
+  --option-knap-border-color-hover: #E8DCCA;
+  --option-knap-text-color: var(--color-primary-white);
+
+
+
 
   --input-width-mobile: 345px;
   --input-height-mobile: 55px;
@@ -291,8 +300,7 @@ grid-template-columns: 0.5fr 0.5fr ;
 flex-shrink: 0;
 scroll-snap-align: start;
 width: fit-content;
-text-align: center;
-}
+place-content: start space-evenly;}
 
 .fremkaldelsegrid img{
   margin: 1em;
@@ -348,6 +356,7 @@ width: var(--cta-button-width-mobil);
 height:var(--cta-button-height-mobil) ;
 border-radius: var(--cta-button-radius-web); 
 background-color: var(--cta-button-background-standard);
+font-size: var(--font-size-button-mobil);
 
 color: var(--color-primary-white);
 box-shadow: var(--button-dropshadow);
@@ -398,6 +407,9 @@ padding:var(--spørgsmål-card-padding);
   
 
 }
+
+
+
 
 /*form{
   background-color: var(--form-background);
@@ -512,6 +524,8 @@ padding: 5px;
   text-align: center;
 }
 
+
+
 h1 {
   text-align: center;
 
@@ -570,15 +584,23 @@ p {
 }
 
 .kategoriknap button{
-  background-color: var(--color-brown);
   border-radius: var(--button-radius-mobil);
   height: var(--button-height-mobil);
   width: var(--button-width-mobil);
-  color: var(--color-primary-white);
+  
   font-size: var(--font-size-button-mobil);
   box-shadow: var(--shadow-level-3);
+
+  background-color: var(--option-knap-background); 
+  border: 2px solid var(--color-green-dark);
+   color: var(--color-brown);
 }
 
+.kategoriknap button:hover {
+  background-color: var(--option-knap-background-hover);
+  border: 2px solid var(--option-knap-border-color-hover);
+  color: var(--color-primary-white);
+}
 
 
 .formgrid img {
@@ -665,9 +687,11 @@ padding-block: 20px;
     height:var(--cta-button-height-web) ;
     border-radius: var(--cta-button-radius-web); 
     background-color: var(--cta-button-background-standard);
+    font-size: var(--font-size-button-web);
     
     color: var(--color-primary-white);
     box-shadow: var(--button-dropshadow);
+    font-family: var(--font-family-h2-h4);
     }
 
 
@@ -712,13 +736,16 @@ width: var(--button-width-web);
 }
 
   .kategoriknap button{
-    background-color: var(--color-brown);
-    border-radius: var(--cta-button-radius-web);
+    border-radius: var(--button-radius-mobil);
     height: var(--cta-button-height-web);
-    width: var(--cta-button-width-web);
-    color: var(--color-primary-white);
+    width: var(--button-width-web);
+    
     font-size: var(--font-size-button-web);
     box-shadow: var(--shadow-level-3);
+  
+    background-color: var(--option-knap-background); --option-knap-background: #E8DCCA;
+    border: 2px solid var(--color-green-dark);
+     color: var(--color-brown);
 }
 
 /*

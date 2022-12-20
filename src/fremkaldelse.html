@@ -61,14 +61,14 @@
 <br>
 
 <section class=" kategoriknap  gap-2  ">
-    <button class="optionknap">FREMKALDELSE OG SCAN</button>
-    <button class="optionknap">KUN FREMKALDELSE</button>
-    <button class="optionknap">KUN SCAN</button>
-    <button class="optionknap">SPECIELLE FILM</button>
+    <a href="#fremkaldelseogscan"><button class="optionknap">FREMKALDELSE OG SCAN</button></a>
+    <a href="#KUNFREMKALDELSE"> <button class="optionknap">KUN FREMKALDELSE</button></a>
+    <a href="#KUNSCAN"> <button class="optionknap">KUN SCAN</button></a>
+    <a href="#SPECIELLEFILM">  <button class="optionknap">SPECIELLE FILM</button></a>
 </section>
 <br>
 <br>
-<section class=" fremkaldelsegrid text-center">
+<section class=" fremkaldelsegrid text-center" id="fremkaldelseogscan">
     <div>
     <h2>FREMKALDELSE AF FILM + SCAN</h2>
     <h3>Send os din film, og du får dine digitale billeder retur på mail eller printet med posten.</h3>
@@ -120,7 +120,7 @@
 </section>
 
 
-<section class="fremkaldelsegrid text-center">
+<section class="fremkaldelsegrid text-center" id="KUNFREMKALDELSE">
     <div>
     <h2>Fremkaldelse af film</h2>
     <h3>Vi fremkalder din film, og du har selv scanner.</h3>
@@ -161,7 +161,7 @@
     </li>
     </ul>
 
-    <div>
+    <div id="KUNSCAN">
     <h2>Scan separat</h2>
     <h3>Din film er allerede fremkaldt. Vi scanner og sender dine billeder på mail..</h3>
 </div>
@@ -196,7 +196,7 @@
     </ul>
 </section>
 
-<section class="fremkaldelsegrid">
+<section class="fremkaldelsegrid" id="SPECIELLEFILM">
     <div>
     <h2>Specielle film</h2>
 </div>
@@ -260,7 +260,52 @@
 
 
 
-  
+<footer class="mt-10 p-10 px-12 md:flex md:justify-between">
+    <section class="flex justify-between md:block">
+      <a href="index.html"
+        ><img class="w-32" src="/img/logo.svg" alt="logo"
+      /></a>
+      <div class="flex justify-between gap-8 md:mt-8 md:justify-evenly">
+        <a href="https://www.facebook.com/CPHLABDK"
+          ><img src="/img/facebook.svg" alt="Facebook ikon"
+        /></a>
+        <a href="https://www.instagram.com/cph.lab/"
+          ><img src="/img/instagram.svg" alt="Instagram ikon"
+        /></a>
+      </div>
+    </section>
+    <section class="mt-8 md:mt-0">
+      <h4>KONTAKT</h4>
+      <p class="mt-4">info@cph-lab.dk</p>
+      <p class="mt-4">
+        CPH-LAB/ Hørsholm foto <br />
+        Hovedgaden 12, 2970, Hørsholm
+      </p>
+    </section>
+    <section class="info mt-8 md:mt-0">
+      <h4>INFO</h4>
+      <p class="mt-4 underline underline-offset-4">
+        Forsendelse og returnering
+      </p>
+      <p class="mt-4 underline underline-offset-4">Persondatapolitik</p>
+      <p class="mt-4 underline underline-offset-4">Handelsbetingelser</p>
+    </section>
+    <section class="mt-8 md:mt-0">
+      <h4>
+        Kan du ikke få nok af os? <br />
+        Tilmeld dig vores nyhedsbrev!
+      </h4>
+      <form class="mt-4 flex rounded-sm p-0">
+        <input
+          type="text"
+          id="fname"
+          value="jenshansen@email.dk"
+          class="rounded-sm border-none text-gray-500"
+        />
+        <button class="rounded-sm md:w-32">TILMELD</button>
+      </form>
+    </section>
+  </footer>
 
 <script type="module" src="./main.js"></script>
 
