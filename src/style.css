@@ -270,13 +270,8 @@ body {
   place-content: start space-evenly;
 }
 
-<<<<<<< HEAD
 .fremkaldelsegrid #carousel li:hover {
-  transform: scale(1.2);
-=======
-.fremkaldelsegrid #carousel li:hover{
-  transform: scale(1.05)
->>>>>>> 3bddb8a2b2d1881bd9649955c0caccbccb02c3d7
+  transform: scale(1.05);
 }
 
 .fremkaldelsegrid img {
