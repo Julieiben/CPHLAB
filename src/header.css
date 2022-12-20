@@ -220,3 +220,14 @@ footer button:active {
 .single-form {
   background-color: transparent;
 }
+
+/*SCROLLBAR FJERNES*/
+/*I webkins-browsere*/
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/*I Firefox*/
+html {
+  scrollbar-width: none;
+}
