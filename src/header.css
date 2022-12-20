@@ -171,7 +171,7 @@ p {
   color: #241c19;
 }
 
-li {
+ul li {
   list-style-type: square;
 }
 
@@ -220,22 +220,4 @@ footer button:active {
 /*SINGLEVIEW - FORM ANDERLEDES*/
 .single-form {
   background-color: transparent;
-}
-
-[type="text"],
-[type="email"],
-[type="url"],
-[type="password"],
-[type="number"],
-[type="date"],
-[type="datetime-local"],
-[type="month"],
-[type="search"],
-[type="tel"],
-[type="time"],
-[type="week"],
-[multiple],
-textarea,
-select {
-  border-color: #584239;
 }
